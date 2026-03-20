@@ -1,0 +1,5 @@
+# Core runtime
+python-dotenv>=1.0.1
+
+# Optional dependencies for future full wiring
+xrpl-py>=2.7.0
