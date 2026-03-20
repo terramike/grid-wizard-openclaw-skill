@@ -1,0 +1,6 @@
+{
+  "name": "openclaw_runtime_skill",
+  "version": "0.1.0",
+  "entrypoint": "skill_runner.py",
+  "description": "Runtime package entrypoint and contract surface for OpenClaw integration."
+}
