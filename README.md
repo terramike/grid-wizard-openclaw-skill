@@ -11,3 +11,28 @@ their own AI agents, trading systems, or OpenClaw deployments.
 
 If you build something cool with it, we'd love to see it.
 
+## Local development
+
+### Local run command (skill entrypoint)
+
+```bash
+PYTHONPATH=src python -m grid_wizard_openclaw_skill --manifest manifest/skill_manifest.json
+```
+
+### CI-friendly commands
+
+Run each command individually:
+
+```bash
+python -m compileall -q src tests scripts
+python scripts/validate_manifest.py
+PYTHONPATH=src python -m unittest discover -s tests -p 'test_*.py' -v
+```
+
+Or run everything at once:
+
+```bash
+./scripts/ci_checks.sh
+```
+
+These commands are designed to run in a clean environment without installing third-party packages.

@@ -1,0 +1,6 @@
+{
+  "name": "grid-wizard-openclaw-skill",
+  "version": "0.1.0",
+  "entrypoint": "python -m grid_wizard_openclaw_skill",
+  "description": "RLUSD/XRP grid engine skill metadata for local and CI smoke checks"
+}
