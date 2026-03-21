@@ -1,0 +1,4 @@
+interface:
+  display_name: "Grid Wizard"
+  short_description: "Operate Grid Wizard safely"
+  default_prompt: "Use $grid-wizard to inspect, validate, or safely simulate the Grid Wizard trading wrapper."

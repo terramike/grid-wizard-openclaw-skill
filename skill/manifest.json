@@ -1,0 +1,33 @@
+{
+  "name": "grid-wizard-skill",
+  "version": "0.1.0",
+  "description": "Grid Wizard XRP/RLUSD skill wrapper with strict safe-mode defaults and a public dry-run-first release surface.",
+  "runtime": {
+    "language": "python",
+    "entrypoint": "skill/skill_runner.py"
+  },
+  "safety": {
+    "dry_run_default": true,
+    "live_flag": "LIVE_TRADING_ENABLED",
+    "live_requires": [
+      "WALLET_SEED"
+    ],
+    "never_log": [
+      "WALLET_SEED",
+      "PRIVATE_KEY"
+    ]
+  },
+  "actions": [
+    "health_check",
+    "show_config",
+    "validate_env",
+    "show_balances",
+    "show_open_offers",
+    "show_grid_status",
+    "simulate_cycle",
+    "run_one_cycle",
+    "cancel_stale_offers",
+    "dry_run_place_preview"
+  ],
+  "notes": "Manifest structure is intentionally simple and extensible for future Grid Wizard runtime alignment."
+}
