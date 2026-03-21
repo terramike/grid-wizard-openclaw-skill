@@ -1,0 +1,9 @@
+{
+  "name": "grid-wizard-openclaw-skill",
+  "version": "0.1.0",
+  "description": "Starter package and entrypoint for Grid Wizard OpenClaw skill.",
+  "entrypoint": "python -m grid_wizard_openclaw_skill",
+  "dependencies": {
+    "python": ">=3.10"
+  }
+}

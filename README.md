@@ -11,3 +11,15 @@ their own AI agents, trading systems, or OpenClaw deployments.
 
 If you build something cool with it, we'd love to see it.
 
+
+## Quickstart
+
+```bash
+python -m grid_wizard_openclaw_skill --help
+python -m grid_wizard_openclaw_skill --dry-run
+```
+
+### Skill package layout
+- `SKILL.md` describes usage and extension notes.
+- `manifest.json` includes dependency metadata.
+- `grid_wizard_openclaw_skill/entrypoint.py` provides the module entrypoint.
